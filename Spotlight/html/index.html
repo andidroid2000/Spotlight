@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Site cu informații despre filme, actori, regizori și cu sistem de rating pentru producții.">
+        <meta name="keywords" content="Filme noi, actori, regizori, recenzii filme, seriale, documentare, animații, emisiuni tv">
+        <meta name="author" content="Toader Andi-Alexandru">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SPOTLIGHT - site pentru cinefili</title>
+        <link rel="shortcut icon" type="image/png" href="../materiale_grafice/movie.png"/>
+        <link rel="stylesheet" href="../css/stilizare.css" type="text/css">
+        <link rel="stylesheet" href="../css/stilizare1200.css" type="text/css" media="screen and (max-width:1200px)"/>
+        <link rel="stylesheet" href="../css/stilizare500.css" type="text/css" media="screen and (max-width:800px)"/>
+        <link rel="stylesheet" href="../css/meniu.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/meniu500.css" type="text/css" media="screen and (max-width:800px)"/>
+    </head>
+    <body>
+   
+        <header>
+            <img src="../Materiale_grafice/logo.png" alt="logo">
+            <h1 id="inceput">Spotlight</h1>
+        </header>
+        <nav>
+            <label id="hamburger" for="ch-menu">
+                <img src="../materiale_grafice/hamburger.png" alt="menu">
+            </label>
+            <input id="ch-menu" type="checkbox">
+            <ul class="meniu">
+                <li id="home"><a href="#">Acasă</a>
+                    <ul>
+                        <li><a href="#prezentare">Bine ați venit!</a></li>
+                        <li><a href="#nou">Noutăți</a></li>
+                        <li><a href="#top">Topul lunii</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </li>
+                <li id="banda"><a href="cinema.html" >Cinema</a></li>
+                <li id="banda"><a href="productie.html">Producție</a></li>
+                <li id="banda"><a href="memes.html" >Memes</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="container">
+                <section id="prezentare">
+                        <div class="linie"><hr><div class="cerc"></div></div>
+                        <h2>Forumul cinefililor</h2>
+                        <div id = "prez1" class="prz"> 
+                            <div id="t1">
+                                <p class = "titlu">Filme noi</p>
+                                <p class = "text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id ligula vitae nulla sagittis consequat vitae nec odio. Suspendisse eu dolor volutpat,
+     
+                                    condimentum tellus et, auctor nunc. Aliquam nec lacus vitae metus placerat euismod. Nullam quis auctor metus. Aliquam molestie, nisi sed ullamcorper
+                                      hendrerit, tellus erat luctus quam, et auctor nisl metus bibendum tortor. Phasellus aliquet massa vitae viverra pulvinar. Vestibulum et egestas est,
+                                       vel convallis elit. Praesent pellentesque mi sit amet dolor porta sollicitudin.<p>
+                            </div>
+                            <img src="../Materiale_grafice/im1.jpg" alt="imag"/>
+       
+                        </div>
+                        <div id="prez2"  class="prz">
+                            <div id="t2">
+                                <p class = "titlu">Producția</p>
+                                <p class = "text">Cras hendrerit lorem at nulla eleifend, in viverra orci efficitur. Phasellus laoreet quam quis consequat eleifend. Sed in lectus risus. Vestibulum ornare 
+                                    ligula metus, id lobortis nunc ultricies sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac purus a libero dapibus aliquet. 
+                                    Donec posuere eros in elit hendrerit ultricies. Praesent enim sapien, egestas ac tempor in, semper a tellus. Donec tempus, ex sed pretium consequat, 
+                                    tortor est sodales ex, eget maximus nulla elit malesuada urna. Etiam nec consequat elit. Pellentesque sem leo, sollicitudin at laoreet at, maximus sed 
+                                    risus. Curabitur auctor tellus at neque efficitur, vel mattis odio eleifend. Duis id orci sem. Fusce pulvinar congue dui, non porttitor velit cursus 
+    
+                                    ullamcorper.</p>
+                            </div>
+                            <img src="../Materiale_grafice/im2.jpg" alt="imag"/> 
+                        </div>
+                        <div id="prez3" class="prz"> 
+                            <div id="t3">
+                                <p class = "titlu">Timp liber</p>
+                                <p class = "text">Praesent lacinia turpis mi, nec imperdiet metus porttitor quis. Sed viverra sollicitudin tincidunt. Integer ut laoreet purus, ac iaculis tellus. Vivamus 
+                                    libero nisl, molestie non finibus vitae, semper eu velit. Quisque in egestas libero, lacinia vestibulum neque. Vivamus pulvinar aliquet mattis. Morbi viverra
+                                     tortor sed ante dictum viverra. Duis molestie congue massa et posuere. Phasellus faucibus nisi hendrerit, fringilla ligula sit amet, sollicitudin mi. 
+                                     Vestibulum in eros imperdiet, euismod orci sodales, convallis lectus. Duis at lectus ut sem gravida mattis. Duis id faucibus turpis. Fusce varius feugiat 
+                                     orci molestie congue.<p>
+                            </div>
+                            <img src="../Materiale_grafice/im3.jpg" alt="imag"/>
+                        </div>
+                        <div class="linie"><hr><div class="cerc"></div></div>
+                    </section>
+                <section id="tabel">
+                    <h2>Tabel</h2>
+                    <table id="program">
+                        <thead>
+                            <tr>
+                                <th>Zi</th>
+                                <th>Interval orar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Luni</td>
+                                <td><time>08:00</time> - <time>20:00</time></td>
+                            </tr>
+                            <tr>
+                                <td>Marți</td>
+                                <td><time>08:00</time> - <time>20:00</time></td>
+                            </tr>
+                            <tr>
+                                <td>Miercuri</td>
+                                <td><time>08:00</time> - <time>20:00</time></td>
+                            </tr>
+                            <tr>
+                                <td>Joi</td>
+                                <td><time>08:00</time> - <time>20:00</time></td>
+                            </tr>
+                            <tr>
+                                <td>Vineri</td>
+                                <td><time>08:00</time> - <time>20:00</time></td>
+                            </tr>
+                            <tr>
+                                <td>Sâmbătă</td>
+                                <td><time>08:00</time> - <time>20:00</time></td>
+                            </tr>
+                            <tr>
+                                <td>Duminică</td>
+                                <td><time>08:00</time> - <time>20:00</time></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="calendar">
+                    <h2>Calendar</h2>
+                    <p>CALENDAR</p>
+                </section>
+                <section id="anunturi">
+                    <h2>Anunturi</h2>
+                    <p>ANUNTURI</p>
+                </section>
+                <section id="utilizatori">
+                    <h2>Utilizatori</h2>
+                    <p>UTILIZATORI</p>
+                </section>
+                <section id="statistici">
+                    <h2>Statistici</h2>
+                    <p>STATISTICI</p>
+                </section>
+      
+                <section id="info">
+                    <h2>Informati utilizatori</h2>
+                    <p>DETALII</p>
+                </section>
+                <section id="continut">
+                    <h2 id="nou">Noutăți</h2>
+                    <div class="linie"><hr><div class="cerc"></div></div>
+                    <section>
+                        <h3>Upcoming - filme noi</h3>
+                        <dl>
+                            <dt><b>Godzilla vs. Kong (2021)</b> - 25.03.2021</dt>
+                            <dd>
+                                <p>Legendele se ciocnesc în „Godzilla vs. Kong”, în timp ce acești adversari mitici se întâlnesc într-o bătălie spectaculoasă pentru secole, cu soarta lumii atârnând în echilibru.
+                                Kong și protectorii săi întreprind o călătorie periculoasă pentru a-și găsi adevărata casă. Alături de ei se află și Jia, o tânără orfană cu care uriașa gorilă a format o legătură
+                                unică și puternică. Dar aceştia se găsesc în mod neașteptat în calea unei Godzilla furioase care distruge tot ce-i iese în cale. Ciocnirea epică dintre cei doi titani - instigată 
+                                de forțe nevăzute - este doar începutul misterului care se află adânc în miezul Pământului.</p>
+                              
+                                </dd>
+                                <dt><b>No time to die (2021)</b> - 30.09.2021</dt>
+                                <dd>
+                                <p>Celebrul 007 lasă în urmă viața de agent secret și caută să se bucure de o viață tihnită în Jamaica. Însă, clipele sale de liniște sunt brusc întrerupte când Felix Leiter, 
+                                    un vechi prieten din CIA, apare și cere ajutor. Astfel, o misiune simplă, de extragere a unui om de știință răpit, se transformă într-una mult mai periculoasă decât era de 
+                                    așteptat și îl poartă pe James Bond pe urma unui răufăcător misterios care e înarmat cu o tehnologie de luptă devastatoare.</p>
+                            
+                                </dd>    
+                        </dl>
+                    </section>
+                    <section>
+                        <h3>Câștigători Globurile de aur</h3>
+
+                    </section>
+                    <section>
+                        <h3>Hot memes</h3>
+                        <dl>
+                            <dt>[meme_animații]: Ice age + Up = :)</dt>
+                            <dd>
+                                <img src="../Materiale_grafice/Memes/meme1.jpg" title="meme up & ice age" width=100%  height=auto>
+                            </dd>
+                            <dt>[meme_actori]: Nu-i de joacă cu Kneau Reeves</dt>
+                            <dd>
+                                <img src="../Materiale_grafice/Memes/meme2.jpg" title="meme kneau" width=100% height=auto>
+                            </dd>
+                        </dl> 
+                    </section>
+                    <section>
+                        <h2 id="top">Topul lunii</h2>
+                        <div id="ifr">
+                        <iframe name="iframe_a" id="ifra" src="https://www.youtube.com/embed/zSWdZVtXT7E" height="315" width="560" title="Iframe Example"></iframe>
+                        <div id="link_iframe">
+                            <a href="https://www.youtube.com/embed/zSWdZVtXT7E" target="iframe_a">[Trailer] Interstellar (2014)</a>
+                            <a href="https://www.youtube.com/embed/YoHD9XEInc0" target="iframe_a">[Trailer] Inception (2010)</a>
+                            <a href="https://www.youtube.com/embed/kVS-6k2tQAA" target="iframe_a">[Trailer] Scenariu pentru happy-end (2012))</a>
+                        </div>
+                        </div>>
+                        <dl>
+                            <dt>Locul I - <b>Inception (2010)</b></dt>
+                                <dd>
+                                    <ul>
+                                        <li><b>Nota:</b> 8.9/10 <meter min="0" max="10" value="8.9" low="5" optimum="10">8.9 din 10</meter></li>
+                                        <li><b>Regizor:</b> <a href="https://ro.wikipedia.org/wiki/Christopher_Nolan_(regizor)" target="_blank">Christopher Nolan</a></li>
+                                        <li><b>Gen:</b> științifico-fantastic, thriller</li>
+                                        <li><b>Actori:</b> Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page</li>
+                                    </ul>
+                                        <details><summary>Descriere <strong>(Spoliers!)</strong></summary>
+                                                <blockquote cite="https://ro.wikipedia.org/wiki/%C3%8Enceputul">
+                                                <p>Dominick "Dom" Cobb și Arthur sunt "extractori", niște spioni care lucrează pentru corporații și utilizează o tehnologie militară experimentală 
+                                                pentru a se infiltra subconștientul țintelor și pentru a extrage informații valoroase din lumea de vis. Ultima lor țintă, omul de afaceri japonez 
+                                                Saito, l-a angajat pe Cobb pentru o sarcină aparent imposibilă: plantarea unei idei în subconștientul unei persoane - adică "inițierea".</p>
+                                                </blockquote>
+                                        </details>
+                                    <br>     
+                                </dd>
+                            <dt>Locul II - <b>Interstellar (2014)</b></dt>
+                                <dd>
+                                    <ul>
+                                        <li><b>Nota:</b> 8.2/10 <meter min="0" max="10" value="8.2" low="5" optimum="10">8.2 din 10</meter></li>
+                                        <li><b>Regizor:</b> <a href="https://ro.wikipedia.org/wiki/Christopher_Nolan_(regizor)" target="_blank">Christopher Nolan</a></li>
+                                        <li><b>Gen:</b> științifico-fantastic, aventuri </li>
+                                        <li><b>Actori:</b> Matthew McConaughey, Anne Hathaway, Jessica Chastain </li>
+                                    </ul>
+                                        <details><summary>Descriere <strong>(Spoliers!)</strong></summary>
+                                            <blockquote cite="https://ro.wikipedia.org/wiki/Interstellar:_C%C4%83l%C4%83torind_prin_univers">
+                                                <p>În viitor, plantele agricole sunt distruse de o mană, doar porumbul mai putând fi cultivat pentru o perioadă, lucru care duce la prăbușirea 
+                                                civilizației și <i>deșertificarea</i> planetei. Fostul pilot NASA Cooper (Matthew McConaughey) se ocupă de o fermă alături de familia sa. Murphy 
+                                                (Mackenzie Foy), fiica de 10 ani a lui Cooper, crede că în camera sa se află o fantomă care încearcă să comunice cu ea. Ei descoperă că 
+                                                "fantoma" este o inteligență necunoscută care trimite mesaje codate prin intermediul undelor gravitaționale, lăsându-le în praf <i>coordonatele
+                                                binare</i> ale unei instalații secrete NASA condusă de profesorul John Brand (Michael Caine).</p>
+                                            </blockquote>
+                                            <p><a href="https://www.youtube.com/embed/zSWdZVtXT7E" target="iframe_b">[Trailer] Interstellar (2014)</a></p>
+                                            <iframe name="iframe_b" height="315" width="560" title="Iframe Example"></iframe> 
+                                        </details>
+                                    <br>
+                                </dd>
+                            <dt>Locul III - <b>Scenariu pentru happy-end (2012)</b></dt>
+                                <dd>
+                                    <ul>
+                                        <li><b>Nota:</b> 8.5/10 <meter min="0" max="10" value="8.5" low="5" optimum="10">8.5 din 10</meter></li>
+                                        <li><b>Regizor:</b> <a href="https://ro.wikipedia.org/wiki/David_O._Russell" target="_blank">David O. Russell</a></li>
+                                        <li><b>Gen:</b> comedie, dramă </li>
+                                        <li><b>Actori:</b> Bradley Cooper, Jennifer Lawrence, Robert De Niro, Jacki Weaver </li>
+                                    </ul>
+                                        <details><summary>Descriere <strong>(Spoliers!)</strong></summary>
+                                        <blockquote cite="https://en.wikipedia.org/wiki/Silver_Linings_Playbook">
+                                            <p>Pat este un fost profesor de liceu, care a petrecut 4 ani într-o clinică destinată tratării bolilor nervoase după ce a fost înșelat și părăsit de 
+                                                soția lui, Nikki. Mutându-se sub același acoperiș cu părinții lui după ce este externat, Pat are impresia falsă că nu a lipsit de acasă mai mult 
+                                                de câteva luni și este obsedat de ideea de a o recuceri pe Nikki.</p>
+                                        </blockquote>
+                                        <p><a href="https://www.youtube.com/embed/kVS-6k2tQAA" target="iframe_c">[Trailer] Scenariu pentru happy-end (2012))</a></p>
+                                        <iframe name="iframe_c" height="315" width="560" title="Iframe Example"></iframe>      
+                                        </details>
+                                    <br>            
+                                </dd>      
+                            </dl>
+                    </section>
+                </section>
+            </div>
+        </main> 
+        <footer>
+            <div class="linie"><hr><div class="cerc"></div></div>
+            <address id="contact">
+                Contact<br>
+                <ul>
+                <li>e-mail: <a href="mailto:info@spotlight.com">info@spotlight.com</a></li>
+                <li>telefon: <a href="tel:+40-0123.345.678">0123.345.678</a></li>
+                </ul>
+                Strada Academiei, numărul 14<br>
+                București<br>
+            </address>
+            <p><small>Copyright &copy;Toader Andi-Alexandru <time datetime="2020-03-06">2020-03-06</time></small></p>
+            <a href="#" id = "buton_top"><div id="triunghi"><span>Început</span></div></a>
+        </footer>
+        <div id="banner">Acesta este un proiect școlar!</div>
+    </body>
+</html>
