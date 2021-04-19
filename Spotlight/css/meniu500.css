@@ -1,0 +1,75 @@
+body {
+    --inaltime-meniu: 4rem;
+}
+nav {
+    background: var(--culoare-meniu-1);
+}
+header, #meniu>li.banda:hover::after {
+    display: none;
+}
+#meniu-mic, #meniu-mic>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#meniu-mic>#hamburger>img {
+    width: var(--inaltime-meniu);
+    height: auto;
+}
+#meniu-mic>div {
+    padding-right: var(--inaltime-meniu);
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    color:#2a2f3c;
+}
+#meniu-mic>div>img {
+    width: 3.2rem;
+    height: auto;
+    padding-right: 0.5rem;;
+}
+#meniu{
+    display:none;
+    position:absolute;
+    width:100%;
+    transform-origin: top left;
+}
+#ch-menu:checked+ul.meniu {
+    display: block;
+    animation-name: aparitie-meniu;
+    animation-duration: 850ms;
+    animation-timing-function: linear;
+}
+@keyframes aparitie-meniu {
+    0%{
+        opacity: 0;
+        transform: rotate(-90deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+#meniu>li {
+    width:100%;
+    height: 3rem;
+}
+#meniu>li a, #meniu>li>div, #meniu>li>ul>li>a {
+    transition: background 0.5s linear, color 0.5s linear;
+    height: 3rem;
+}
+#meniu>li>a:hover, #meniu>li>div:hover {
+    background: rgb(207, 214, 221);
+    color:#0e1821;
+}
+#meniu>li>ul {
+    position:absolute;
+    width:100%;
+    z-index:20;
+}
+#meniu>li:hover>ul {
+    animation: none;
+    transition-delay: 500ms;
+}
