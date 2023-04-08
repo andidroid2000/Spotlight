@@ -1,0 +1,312 @@
+@import "video.css";
+@import "galerie-statica.css";
+html{
+    font-size: 16px;
+    font-family: 'Varela', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    --culoare-fundal: #eceae3;
+    --culoare-meniu-1: #e5c45e;
+    --culoare3: rgb(100, 100, 190);
+    --culoare4: rgb(190, 190, 100);
+    --culoare5: rgb(100, 190, 190);
+    
+    margin-top:0;
+    margin-bottom:0;
+
+    background-color: var(--culoare-fundal);
+    border-left: 120px solid;
+    border-right: 120px solid;
+    border-image:url("../materiale_grafice/borderfundal.png") 200 round;
+
+    --body-padding:2rem;
+    padding-left:var(--body-padding);
+    padding-right:var(--body-padding);
+    padding-top:0;
+    padding-bottom:0;
+    min-width:350px;
+
+    text-align: justify;
+}
+
+#container-grid{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.6fr;
+    grid-template-areas:
+        "prezentare prezentare prezentare"
+        "calendar tabel anunturi"
+        "utilizatori tabel anunturi"
+        "utilizatori statistici info"
+        "continut continut continut";
+}
+
+#tabel{
+    grid-area: tabel;
+}
+#calendar{
+    grid-area: calendar;
+}
+#anunturi{
+    grid-area: anunturi;
+}
+#utilizatori{
+    grid-area: utilizatori;
+}
+#statistici{
+    grid-area: statistici;
+}
+#info{
+    grid-area: info;
+}
+#continut{
+    grid-area: continut;
+}
+
+#prezentare{
+    margin-top: 2.3rem;
+    grid-area: prezentare;
+    display: block;
+}
+#prezentare>div.prz{
+    display: flex;
+    align-items: center;
+    padding-left: 1.25rem;
+    padding-bottom: 2rem;
+}
+#prezentare>p{
+    padding-left: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-family: 'Merriweather', sans-serif;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+#prez2 {
+    flex-direction: row-reverse;
+}
+#prez2 p{
+    margin-left: 2rem;
+}
+
+.titlu {
+    padding-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.text {
+    padding-right: 2rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+#prezentare img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-top: 1rem solid;
+    border-bottom: 1rem solid;
+    border-image:url("../materiale_grafice/borderimg.png") 260 round;
+
+
+}
+header {
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+    padding-top: 1rem;
+    text-align: end;  
+    font-size: 2rem;
+    font-family: 'Merriweather', serif;
+    padding-bottom: 1rem;
+}
+header>img{
+    width: 5%;
+    height: auto;
+    min-width: 5rem;
+    padding-right: 1rem;
+    margin: 0;
+}
+
+#buton_top {
+    position: fixed;
+    opacity: 0.5;
+    bottom: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 2.7rem;
+    border: 0.6rem solid #5ca2a2;
+    border-top: transparent;
+    border-bottom: transparent;
+    background-color: white;
+    border-radius: 40%;
+    text-align: center;
+  }
+#buton_top:hover{
+    opacity:1;
+}
+  
+#buton_top #triunghi{
+    margin-top: 20px;
+    height: 0px;
+    width: 0;
+    display: inline-block;
+    border-bottom: 0.7rem solid  #5ca2a2;
+    border-left: 0.8rem solid transparent;
+    border-right: 0.8rem solid transparent;
+    vertical-align: middle;
+    -webkit-transition: -webkit-transform 500ms linear;
+    transition: -webkit-transform 500ms linear;
+    transition: transform 500ms linear;
+    transition: transform 500ms linear, -webkit-transform 500ms linear;
+  }
+  
+#buton_top:hover #triunghi {
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
+    border-bottom-color: #304a47;
+  }
+
+#triunghi{
+    margin-top: 20px;
+    height:0px;
+    width:0;
+    display:inline-block;
+    border-bottom:1rem solid #5ca2a2;
+    border-left:1rem solid transparent;
+    border-right:1rem solid transparent;
+    vertical-align: middle;
+    transition: transform 500ms linear;
+}
+
+#buton_top span{
+    visibility: hidden;
+    background-color: #304a47;
+    color: white;
+    padding: 0.2rem;
+    width: 70px;
+    right: 20%;
+    margin-right: 40px;
+    position: absolute;
+    z-index: 1;
+}
+
+#buton_top:hover span{
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+
+#continut img{
+    max-width: 500px;
+}
+.linie{
+    height: 10px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1),  rgba(0,0,0,0));
+    text-align: center;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.cerc {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background-color: dimgray;
+    border: solid 4px black;
+    border-radius: 50%;
+    position: absolute;
+    top: -6px;
+}
+
+#banner{
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1.3rem;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    padding-top:5px;
+    text-align: center;
+    animation-name: aparitie-banner, disparitie-banner;
+    animation-duration: 4s, 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aparitie-banner{
+    0%{
+        bottom: -25px;
+    }
+    33.33%{
+        background-color: var(--culoare-meniu-1);
+        color: #2a2f3c;
+    }
+    66.66%{
+        bottom: 20px;
+        background-color: #b8881c;
+        color: #2a2f3c;
+    }
+    100%{
+        bottom: 0px;
+        background-color: var(--culoare-meniu-1);
+        color: #2a2f3c;
+    }
+}
+
+@keyframes disparitie-banner{
+    0%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+#tabel{
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+i {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+.subtit{
+    text-align: left;
+}
+#container-grid>section{
+    padding: 0.9rem;
+}
+
+#eroare{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+#eroare>img{
+    align-content: center;
+    width: 400px;
+    height: auto;
+}
+#eroare>h2{
+    text-align: left;
+}
+#eroare1{
+    height: 100vh;
+}
+#watermark{
+    display: none;
+}
+#continut h3{
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+.lista-detalii>dd, dt{
+    margin-bottom: 0.6rem;
+}

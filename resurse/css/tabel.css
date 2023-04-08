@@ -1,0 +1,64 @@
+table, tr, th, td{
+    border-collapse: collapse;
+    color: #0e1821;
+}
+table th{
+    font-size: 1.3rem;
+    color: #0e1821;;
+    background-color: #b8881c;
+    text-align: center;
+}
+table td{
+    border-top: 0.4rem solid var(--culoare-fundal);
+}
+table{
+    width: 100%;
+    counter-reset: ct-orar;
+}
+table tbody tr{
+    counter-increment: ct-orar;
+}
+td{
+    text-align: center;
+}
+#tabel td:nth-child(even){
+    background-color: #aed3d8;
+}
+
+#tabel td:nth-child(odd){
+    background-color: #5ca2a2;
+    color:#2a2f3c;
+    font-weight: bold;
+    border-right: 0.4rem solid var(--culoare-fundal);
+    width: 150px;
+    vertical-align: text-top;
+}
+#tabel tbody td:nth-child(odd){
+    padding-bottom: 0.35rem;
+}
+.titlutab::before{
+    font-weight: bold;
+    content: "Recomadare " counter(ct-orar)": ";
+}
+#tabel tr:hover td{
+    background-color: #c8d0d4;
+}
+#colturi {
+    border-radius: 25px;
+    border-collapse: collapse;
+    margin-bottom: 1.2rem;
+}
+.detalii {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content:flex-start;
+    padding-left: 0.5rem;
+    text-align: start;
+}
+#tabel img{
+    padding-top: 15px;
+    width: 120px;
+    height:auto;
+}

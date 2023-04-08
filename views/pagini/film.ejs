@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta name="description" content="Site cu informații despre filme, actori, regizori și cu sistem de rating pentru producții.">
+        <meta name="keywords" content="Filme noi, actori, regizori, recenzii filme, seriale, documentare, animații, emisiuni tv">
+        <title>SPOTLIGHT - <%- locals.prod.nume %></title>
+        <%- include("../fragmente/head") %>
+    </head>
+    <body>
+        <%- include("../fragmente/header") %>
+        <main>
+            <h2 style="margin-top: 2rem;"><span class="nume"><%- locals.prod.nume %></span> (<%- locals.prod.data_lansare.getFullYear()%>)</h2>
+            <div class = "linie"><hr><div class = "cerc"></div></div>
+            <img src="/resurse/materiale_grafice/galerie/<%- locals.prod.cale_imagine %>" style="height: auto; width: 100%; max-width: 450px;"/>
+            <div class="detalii-art" style = " padding: 1rem;">
+                <p><b>Tip: </b><span><%- locals.prod.categ_prod %></span></p>
+                <p><b>Rating:</b> <span class="val-nota"><%- locals.prod.nota %></span>/10 <meter min="0" max="10" value="<%- locals.prod.nota %>" low="5" optimum="10">8.9 din 10</meter></p>
+                <p><b>Regizor:</b> <%- locals.prod.regizor %></p>
+                <p><b>Țară producție:</b><span class = "val-tara"><%- locals.prod.tara_prod %></span></p>
+                <p><b>Gen:</b> <span class = "val-genuri"><%- locals.prod.gen_film %></span></p>
+                <p><b>Dată de lansare:</b><%- locals.prod.data_lansare.getDate()%>-<%-locals.prod.data_lansare.getMonth()%>-<%-locals.prod.data_lansare.getFullYear() %></p>
+                <p><b>Actori:</b> <span><%- locals.prod.actori %></span></p>
+                <p><b>Durata:</b> <%- locals.prod.durata %> minute</p>
+                <p><b>Potrivit minorilor:</b> <span class = "val-copii"><%- locals.prod.pt_copii %></span></p>
+                <p><b>Descriere: </b><span><%- locals.prod.descriere %></span></p>
+            </div>
+            <section id="galerie-statica" style="margin-top: 1rem;">
+                <h3 style="margin-bottom: 1rem;">Alte recomandări:</h3>
+                <%- include("../fragmente/galerie-statica") %> 
+            </section>
+        </main>
+        <%- include("../fragmente/footer") %> 
+        <div id="banner">Acesta este un proiect școlar!<i class="fas fa-user-graduate"></i></div>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+#container-grid {
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+#prez2 p{
+    margin-left: 0;
+}
+header::before {
+    position: absolute;
+    content: "Acesta este un proiect școlar!";
+    margin-left: 10%;
+    margin-right: 10%;
+    top: 1rem;
+    width: 80%;
+    height: 2.5rem;
+    text-align: center;
+    border:black dotted 5px;
+}
+header {
+    position: relative;
+    float: none;
+    page-break-after: always;
+}  
+h1{
+    font-size: 2.5rem;
+    text-decoration: underline;
+    margin-top: 70%;
+    margin-left: 40%;
+	text-align:center;
+    vertical-align: middle;
+    position: static;
+}
+body {
+    border: none;
+    background-color: white;
+    position: relative;
+}
+img, video, iframe, #link_iframe, #buton_top, nav, #banner, .cerc, #text-iframe{
+    display: none;
+}
+table th{
+    background-color: white;
+}
+#tabel td:nth-child(even){
+    background-color: white;
+}
+
+#tabel td:nth-child(odd){
+    background-color: white;
+    color:#2a2f3c;
+    font-weight: bold;
+    border-right: 0.2rem solid black;
+    vertical-align: text-top;
+}
+table td{
+    border-top: 0.2rem solid black;
+}
+#tabel {
+    margin-bottom: -24rem;
+    page-break-inside: avoid;
+}
+.detalii {
+    display: block;
+}
+#detailed-iframes{
+    display: none;
+}
+.linie{
+    height: 1px;
+    width: 100%;
+    background: none;
+} 
+	html, body {
+        width: 210mm;
+        /* height: 297mm; */
+        /*height: 282mm;*/
+				overflow:visible !important;
+                float:none;
+		}
+#watermark{
+	display: block;
+	position: fixed;
+	top: 0;
+	color:rgba(0,0,0,0.4);
+	right:10%;
+}
+#watermark::after{		
+	opacity:0.65;
+    width: 100px;
+    height: 2cm;
+	display: block;
+	background: white;
+	border: 10px double black;
+	content:"Toader Andi-Alexandru";
+    font-size: 1.25rem;
+    text-align: center;
+}		
+footer {
+    page-break-before: always;
+}
+@page {
+	size: A4 portrait;
+	margin: 1cm;
+	counter-increment: page;
+}
+@page:left{
+	margin-left: 2.5cm;
+	margin-right: 0.5cm;
+}
+@page:right{
+    margin-left: 0.5cm;
+	margin-right: 2.5cm;
+}

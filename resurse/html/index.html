@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Site cu informații despre filme, actori, regizori și cu sistem de rating pentru producții.">
+        <meta name="keywords" content="Filme noi, actori, regizori, recenzii filme, seriale, documentare, animații, emisiuni tv">
+        <meta name="author" content="Toader Andi-Alexandru">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SPOTLIGHT - site pentru cinefili</title>
+        <link rel="shortcut icon" type="image/png" href="../materiale_grafice/logo.png"/> 
+        <link rel="stylesheet" href="../css/stilizare.css" type="text/css">
+        <link rel="stylesheet" href="../css/stilizare1200.css" type="text/css" media="screen and (max-width:1300px)"/>
+        <link rel="stylesheet" href="../css/stilizare500.css" type="text/css" media="screen and (max-width:800px)"/>
+        <link rel="stylesheet" href="../css/meniu.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/meniu1200.css" type="text/css" media="screen and (max-width:1200px)"/>
+        <link rel="stylesheet" href="../css/meniu500.css" type="text/css" media="screen and (max-width:800px)"/>
+        <link rel="stylesheet" href="../css/tabel.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/iframe.css" type="text/css"/>
+        <script src="https://kit.fontawesome.com/2c00280b1d.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Varela&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="../Materiale_grafice/logo.png" alt="logo">
+            <h1>Spotlight</h1>
+        </header>
+        <nav>
+            <div id="meniu-mic">
+                <label id="hamburger" for="ch-menu">
+                    <img src="../materiale_grafice/hamburger.png" alt="menu-hamburger">
+                </label>
+                <div>
+                    <img src="../Materiale_grafice/logo_hamburger.png" alt="logo">
+                    <p id="titlul-hamburger">Spotlight</p>
+                </div>
+            </div>
+            <input id="ch-menu" type="checkbox">
+            <ul class="meniu" id="meniu">
+                <li id="home"><div id="casuta"><i class="fas fa-home" id="himg"></i><a href="#">Acasă</a></div>
+                    <ul>
+                        <li><a href="#prezentare">Bine ați venit!</a></li>
+                        <li><a href="#tabel">Topul lunii</a></li>
+                        <li><a href="#nou">Noutăți</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="banda"><a href="cinema.html" >Cinema</a></li>
+                <li class="banda"><a href="productie.html">Producție</a></li>
+                <li class="banda"><a href="memes.html" >Memes</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="container-grid">
+                <section id = "prezentare">
+                    <h2 class = "subtit">Forumul cinefililor</h2>
+                    <div class = "linie"><hr><div class = "cerc"></div></div>
+                    <p>Bine ați venit pe cel mai mare site dedicat subiectelor de cinematografie, cu o impresionantă colecție despre: <b>filme</b>, <b>actori</b>, <b>regizori</b> și <b>memes</b>.</p>
+                    <div id = "prez1" class="prz"> 
+                        <div id="t1">
+                            <p class = "titlu">Filme noi<i class="fas fa-film" style="padding-left: 2px;"></i></p>
+                            <p class = "text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id ligula vitae nulla sagittis consequat vitae nec odio. Suspendisse eu dolor
+                                     volutpat, condimentum tellus et, auctor nunc. Aliquam nec lacus vitae metus placerat euismod. Nullam quis auctor metus. Aliquam molestie, nisi sed 
+                                     ullamcorper hendrerit, tellus erat luctus quam, et auctor nisl metus bibendum tortor. Phasellus aliquet massa vitae viverra pulvinar. Vestibulum et egestas
+                                     est, vel convallis elit. Praesent pellentesque mi sit amet dolor porta sollicitudin.<p>
+                        </div>
+                        <img src="../materiale_grafice/img_prezentare/im1.jpg" alt="imag"/>
+       
+                    </div>
+                    <div id="prez2"  class="prz">
+                        <div id="t2">
+                            <p class = "titlu">Producția<i class="fas fa-video" style="padding-left: 2px;"></i></p>
+                            <p class = "text">Cras hendrerit lorem at nulla eleifend, in viverra orci efficitur. Phasellus laoreet quam quis consequat eleifend. Sed in lectus risus. Vestibulum ornare 
+                                    ligula metus, id lobortis nunc ultricies sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac purus a libero dapibus aliquet. 
+                                    Donec posuere eros in elit hendrerit ultricies. Praesent enim sapien, egestas ac tempor in, semper a tellus. Donec tempus, ex sed pretium consequat, 
+                                    tortor est sodales ex, eget maximus nulla elit malesuada urna. Etiam nec consequat elit. Pellentesque sem leo, sollicitudin at laoreet at, maximus sed 
+                                    risus. Curabitur auctor tellus at neque efficitur, vel mattis odio eleifend. Duis id orci sem. Fusce pulvinar congue dui, non porttitor velit cursus ullamcorper.</p>
+                        </div>
+                        <img src="../materiale_grafice/img_prezentare/im2.jpg" alt="imag"/> 
+                    </div>
+                    <div id="prez3" class="prz"> 
+                        <div id="t3">
+                            <p class = "titlu">Timp liber<i class="far fa-laugh-wink fa-spin" style="padding-left: 2px;"></i></p>
+                            <p class = "text">Praesent lacinia turpis mi, nec imperdiet metus porttitor quis. Sed viverra sollicitudin tincidunt. Integer ut laoreet purus, ac iaculis tellus. Vivamus 
+                                    libero nisl, molestie non finibus vitae, semper eu velit. Quisque in egestas libero, lacinia vestibulum neque. Vivamus pulvinar aliquet mattis. Morbi viverra
+                                     tortor sed ante dictum viverra. Duis molestie congue massa et posuere. Phasellus faucibus nisi hendrerit, fringilla ligula sit amet, sollicitudin mi. 
+                                     Vestibulum in eros imperdiet, euismod orci sodales, convallis lectus. Duis at lectus ut sem gravida mattis. Duis id faucibus turpis. Fusce varius feugiat 
+                                     orci molestie congue.<p>
+                        </div>
+                        <img src="../materiale_grafice/img_prezentare/im3.jpg" alt="imag"/>
+                    </div>
+                    <div class="linie"><hr><div class="cerc"></div></div>
+                </section>
+                <section id="tabel">
+                    <h2><i class="fas fa-award"></i>Top lunar - Aprilie</h2>
+                    <div style="overflow-x:auto;">
+                    <div id = "colturi" style="overflow-x:scroll;">
+                        <table>
+                            <thead>
+           
+                                <tr>
+                                    <th>Film</th>
+                                    <th>Despre</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <img src="../materiale_grafice/img_tabel/film1.jpg"  alt="film">
+                                            <p class="titlutab">Interstellar (2014)</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="detalii">
+                                            <p><b>Rating:</b> 8.9/10 <meter min="0" max="10" value="8.9" low="5" optimum="10">8.9 din 10</meter></p>
+                                            <p><b>Regizor:</b> <a href="https://ro.wikipedia.org/wiki/Christopher_Nolan_(regizor)" target="_blank">Christopher Nolan</a></p>
+                                            <p><b>Gen:</b> științifico-fantastic, thriller</p>
+                                
+                                            <p><b>Actori:</b> Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page</p>
+                                            <details><summary>Descriere <strong>(Spoliers!)</strong></summary>
+                                            <blockquote cite="https://ro.wikipedia.org/wiki/%C3%8Enceputul" class="abc">Dominick "Dom" Cobb și Arthur sunt "extractori", niște spioni
+                                             care lucrează pentru corporații și utilizează o tehnologie militară experimentală pentru a se infiltra subconștientul țintelor și pentru a 
+                                             extrage informații valoroase din lumea de vis. Ultima lor țintă, omul de afaceri japonez Saito...
+                                            </blockquote></details>
+                                        </div>
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <img src="../materiale_grafice/img_tabel/film2.jpg" alt="film">
+                                            <p class="titlutab">Inception (2010)</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="detalii">
+                                            <p><b>Rating:</b> 8.2/10 <meter min="0" max="10" value="8.2" low="5" optimum="10">8.2 din 10</meter></p>
+                                            <p><b>Regizor:</b> <a href="https://ro.wikipedia.org/wiki/Christopher_Nolan_(regizor)" target="_blank">Christopher Nolan</a></p>
+                                            <p><b>Gen:</b> științifico-fantastic, aventuri </p>
+                                            <p><b>Actori:</b> Matthew McConaughey, Anne Hathaway, Jessica Chastain </p>
+                                            <details><summary>Descriere <strong>(Spoliers!)</strong></summary>
+                                            <blockquote cite="https://ro.wikipedia.org/wiki/Interstellar:_C%C4%83l%C4%83torind_prin_univers">În viitor, plantele agricole sunt distruse de o mană,
+                                                 doar porumbul mai putând fi cultivat pentru o perioadă, lucru care duce la prăbușirea civilizației și <i>deșertificarea</i> planetei. Fostul pilot
+                                                  NASA Cooper (Matthew McConaughey) se ocupă de o fermă alături de familia sa. Murphy (Mackenzie Foy), fiica de 10 ani a lui Cooper, crede că în 
+                                                  camera sa se află o fantomă care încearcă să comunice cu ea....
+                                            </blockquote></details>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <img src="../materiale_grafice/img_tabel/film3.jpg" alt="film">
+                                            <p class="titlutab">Silver linings playbook (2012)</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="detalii">
+                                            <p><b>Rating:</b> 8.5/10 <meter min="0" max="10" value="8.5" low="5" optimum="10">8.5 din 10</meter></p>
+                                            <p><b>Regizor:</b> <a href="https://ro.wikipedia.org/wiki/David_O._Russell" target="_blank">David O. Russell</a></p>
+                                            <p><b>Gen:</b> comedie, dramă </p>
+                                            <p><b>Actori:</b> Bradley Cooper, Jennifer Lawrence, Robert De Niro, Jacki Weaver </p>
+                                            <details><summary>Descriere <strong>(Spoliers!)</strong></summary>
+                                            <blockquote cite="https://en.wikipedia.org/wiki/Silver_Linings_Playbook">
+                                                    Pat este un fost profesor de liceu, care a petrecut 4 ani într-o clinică destinată tratării bolilor nervoase după ce a fost înșelat și părăsit de 
+                                                    soția lui, Nikki. Mutându-se sub același acoperiș cu părinții lui după ce este externat, Pat are impresia falsă că nu a lipsit de acasă mai mult 
+                                                    de câteva luni și este obsedat de ideea de a o recuceri pe Nikki.
+                                            </blockquote></details>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac laoreet felis. Quisque porta dui id sagittis consequat. Nam at efficitur neque. Nunc vehicula sem dui, 
+                        non sagittis nibh gravida sed. Praesent et magna at nisl viverra fringilla. Nullam sed urna turpis. Vivamus id rhoncus sem. </p>
+                    <p>Trailere pentru filmele lunii:</p>
+                    <div class="detailed-iframes">
+                        <div class="iframes">
+                            <iframe name="iframe_tabel" src="https://www.youtube.com/embed/zSWdZVtXT7E" title="Iframe Example" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div id="link_iframe">
+                            <a href="https://www.youtube.com/embed/zSWdZVtXT7E" target="iframe_tabel">Interstellar (2014)</a>
+                            <a href="https://www.youtube.com/embed/YoHD9XEInc0" target="iframe_tabel">Inception (2010)</a>
+                            <a href="https://www.youtube.com/embed/kVS-6k2tQAA" target="iframe_tabel">Silver linings playbook (2012)</a>
+                        </div>
+                    </div>
+                </section>
+                <section id="calendar">
+                    <h2>Calendar</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis justo ultricies nibh elementum euismod. Fusce lacinia augue metus, viverra tincidunt nibh malesuada 
+                        rutrum. Fusce massa est, rutrum at nibh eget, lobortis hendrerit tortor. Nulla a odio a lectus pharetra ultrices id nec lacus. Curabitur id tempor odio, vel molestie 
+                        dui. Vestibulum tortor enim, hendrerit in erat a, sagittis ullamcorper justo. Vestibulum aliquet euismod enim, imperdiet tincidunt orci tempus laoreet. Mauris varius 
+                        aliquam lectus, vel accumsan leo suscipit ut. Curabitur at ornare tellus. Sed sed maximus nisi, id finibus dui.</p>
+                </section>
+                <section id="anunturi">
+                    <h2>Anunțuri</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis justo ultricies nibh elementum euismod. Fusce lacinia augue metus, viverra tincidunt nibh malesuada 
+                        rutrum. Fusce massa est, rutrum at nibh eget, lobortis hendrerit tortor. Nulla a odio a lectus pharetra ultrices id nec lacus. Curabitur id tempor odio, vel molestie 
+                        dui. Vestibulum tortor enim, hendrerit in erat a, sagittis ullamcorper justo. Vestibulum aliquet euismod enim, imperdiet tincidunt orci tempus laoreet. Mauris varius 
+                        aliquam lectus, vel accumsan leo suscipit ut. Curabitur at ornare tellus. Sed sed maximus nisi, id finibus dui.</p>
+                </section>
+                <section id="utilizatori">
+                    <h2>Utilizatori</h2>
+                    <ul>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                        <li><i class="fas fa-user"></i>Lorem Ipsum</li>
+                    </ul>
+                </section>
+                <section id="statistici">
+                    <h2>Statistici</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis justo ultricies nibh elementum euismod. Fusce lacinia augue metus, viverra tincidunt nibh malesuada 
+                        rutrum. Fusce massa est, rutrum at nibh eget, lobortis hendrerit tortor. Nulla a odio a lectus pharetra ultrices id nec lacus.</p>
+                </section>   
+                <section id="info">
+                    <h2>Informații utilizatori</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis justo ultricies nibh elementum euismod. Fusce lacinia augue metus, viverra tincidunt nibh malesuada 
+                        rutrum. Fusce massa est, rutrum at nibh eget, lobortis hendrerit tortor. Nulla a odio a lectus pharetra ultrices id nec lacus.</p>
+                </section>
+                <section id="continut">
+                    <h2 id="nou" class="subtit">Noutăți</h2>
+                    <div class="linie"><hr><div class="cerc"></div></div>
+                    <section>
+                        <h3>Upcoming - filme noi</h3>
+                        <dl>
+                            <dt><b>Godzilla vs. Kong (2021)</b> - 25.03.2021</dt>
+                            <dd>
+                                <p>Legendele se ciocnesc în „Godzilla vs. Kong”, în timp ce acești adversari mitici se întâlnesc într-o bătălie spectaculoasă pentru secole, cu soarta lumii atârnând în echilibru.
+                                Kong și protectorii săi întreprind o călătorie periculoasă pentru a-și găsi adevărata casă. Alături de ei se află și Jia, o tânără orfană cu care uriașa gorilă a format o legătură
+                                unică și puternică. Dar aceştia se găsesc în mod neașteptat în calea unei Godzilla furioase care distruge tot ce-i iese în cale. Ciocnirea epică dintre cei doi titani - instigată 
+                                de forțe nevăzute - este doar începutul misterului care se află adânc în miezul Pământului.</p>
+                              
+                                </dd>
+                                <dt><b>No time to die (2021)</b> - 30.09.2021</dt>
+                                <dd>
+                                <p>Celebrul 007 lasă în urmă viața de agent secret și caută să se bucure de o viață tihnită în Jamaica. Însă, clipele sale de liniște sunt brusc întrerupte când Felix Leiter, 
+                                    un vechi prieten din CIA, apare și cere ajutor. Astfel, o misiune simplă, de extragere a unui om de știință răpit, se transformă într-una mult mai periculoasă decât era de 
+                                    așteptat și îl poartă pe James Bond pe urma unui răufăcător misterios care e înarmat cu o tehnologie de luptă devastatoare.</p>
+                            
+                                </dd>    
+                        </dl>
+                    </section>
+                    <section>
+                        <h3>Câștigători Globurile de aur</h3>
+
+                    </section>
+                    <section>
+                        <h3>Hot memes</h3>
+                        <dl>
+                            <dt>[meme_animații]: Ice age + Up = :)</dt>
+                            <dd>
+                                <img src="../Materiale_grafice/Memes/meme1.jpg" title="meme up & ice age" style ="height:auto; width:100%">
+                            </dd>
+                            <dt>[meme_actori]: Nu-i de joacă cu Kneau Reeves</dt>
+                            <dd>
+                                <img src="../Materiale_grafice/Memes/meme2.jpg" title="meme kneau" style ="height:auto; width:100%">
+                            </dd>
+                        </dl> 
+                    </section>
+                </section>
+            </div>
+        </main> 
+        <footer>
+            <div class="linie"><hr><div class="cerc"></div></div>
+            <address id="contact">
+                Contact<br>
+                <ul>
+                <li><i class="fas fa-envelope"></i>e-mail: <a href="mailto:info@spotlight.com">info@spotlight.com</a></li>
+                <li><i class="fas fa-phone"></i>telefon: <a href="tel:+40-0123.345.678">0123.345.678</a></li>
+                </ul>
+                Strada Academiei, numărul 14<br>
+                București<br>
+            </address>
+            <p><small>Copyright &copy;Toader Andi-Alexandru <time datetime="2020-03-06">2020-03-06</time></small></p>
+            <a href="#" id = "buton_top"><div id="triunghi"><span>Început</span></div></a>
+        </footer>
+        <div id="banner">Acesta este un proiect școlar!<i class="fas fa-user-graduate"></i></div>
+    </body>
+</html>

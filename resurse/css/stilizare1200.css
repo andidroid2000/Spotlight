@@ -1,0 +1,50 @@
+html{
+    font-size:14px;
+}
+body{
+    --body-padding: 2%;
+    border-left: 90px dotted;
+    border-right: 90px dotted;
+    border-image:url("../materiale_grafice/borderfundal.png") 200 round;
+}
+#container-grid {
+    display:grid;
+    grid-template-columns: 1.5fr 2fr 1.5fr;
+    grid-template-areas:
+                        "prezentare prezentare prezentare"
+                        "utilizatori tabel tabel"
+                        "statistici tabel tabel"
+                        "info calendar anunturi"
+                        "continut continut continut";
+    padding: 1rem;
+}
+#prezentare img{
+    min-width: 220px;
+}
+header {
+    align-items: center;
+}
+#buton_top {
+    margin-right: 3.1rem;
+}
+#banner{
+    display: none;
+}
+#tabel{
+    padding:none;
+    padding-left:1rem;
+}
+#tabel img{
+    padding-top: 7.5px;
+    width: 110px;
+    height:auto;
+}
+#tabel td:nth-child(odd){
+    width: 125px;
+}
+#eroare{
+    padding: 2rem;
+}
+#eroare>img{
+    width: 300px;
+}

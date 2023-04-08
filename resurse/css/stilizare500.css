@@ -1,0 +1,44 @@
+html{
+    font-size:12px;
+}
+body{
+    --body-padding: 0rem;
+    border-left: 60px dotted;
+    border-right: 60px dotted;
+    border-image:url("../materiale_grafice/borderfundal.png") 200 round;
+}
+#container-grid {
+    padding: 0;
+    display:block;
+}
+#prezentare{
+    display: block;
+}
+#prezentare>div.prz
+{
+    display: block;
+}
+.prz img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: none;
+    margin-top: 2rem;
+}
+#prez2 p{
+    margin-left: 0rem;
+}
+#banner{
+    display: none;
+}
+#tabel img{
+    padding-top: 7.5px;
+    width: 105px;
+    height:auto;
+}
+#tabel td:nth-child(odd){
+    width: 120px;
+}
+#eroare>img{
+    width: 200px;
+}

@@ -1,0 +1,35 @@
+{
+  "name": "spotlight",
+  "version": "1.0.0",
+  "description": "Site cu info despre productii cinematografice, despre echipa din spatele proeictelor si cu sistem de rating si clasare al filmelor.  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "filme",
+    "noi",
+    "actori",
+    "regizori",
+    "recenzii",
+    "filme",
+    "seriale",
+    "documentare",
+    "animatii",
+    "emisiuni",
+    "TV"
+  ],
+  "author": "Toader Andi-Alexandru",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mp4box": "^0.4.1",
+    "pg": "^8.6.0",
+    "request-ip": "^2.1.3",
+    "router": "^1.3.5",
+    "sass": "^1.32.13",
+    "scss": "^0.2.4",
+    "sharp": "^0.28.2"
+  }
+}

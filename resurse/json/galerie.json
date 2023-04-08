@@ -1,0 +1,83 @@
+{
+	"cale_galerie":"resurse/materiale_grafice/galerie",
+	"imagini": [
+		{
+			"fisier":"america-2.png",
+            "titlu": "Coming 2 America",
+			"descriere":"Coming 2 America",
+			"timp":"00:00-20:00"
+		},
+		{
+			"fisier":"bond.png",
+            "titlu": "Bond",
+			"descriere":"No Time to Die",
+			"timp":"00:00-20:00"
+		},
+		{
+			"fisier":"the-father.png",
+            "titlu": "The Father",
+			"descriere":"The Father",
+			"timp":"00:00-20:00"
+		},
+		{
+			"fisier":"new-space.png",
+            "titlu": "Space Jam: A New Legacy",
+			"descriere":"Space Jam: A New Legacy",
+			"timp":"00:00-20:00"
+		},
+		{
+			"fisier":"mortal-kombat.png",
+            "titlu": "mortal-kombat",
+			"descriere":"Mortal Kombat",
+			"timp":"15:00-23:00"
+		},
+		{
+			"fisier":"godzilla-kong.png",
+            "titlu": "godzilla-kong",
+			"descriere":"Godzilla vs Kong",
+			"timp":"15:00-23:00"
+		},
+		{
+			"fisier":"cruella.png",
+            "titlu": "cruella",
+			"descriere":"Cruella",
+			"timp":"15:00-23:00"
+		},
+		{
+			"fisier":"water-man.png",
+            "titlu": "The Water Man",
+			"descriere":"The Water Man",
+			"timp":"15:00-23:00"
+		},
+		{
+			"fisier":"spiral.png",
+            "titlu": "Spiral",
+			"descriere":"Spiral",
+			"timp":"15:00-23:00"
+		},
+		{
+			"fisier":"conjuring-3.png",
+            "titlu": "The Conjuring",
+			"descriere":"The Conjuring: The Devil Made Me Do It",
+			"timp":"15:00-23:00"
+		},
+		{
+			"fisier":"the_heights.png",
+            "titlu": "In the Heights",
+			"descriere":"In the Heights",
+			"timp":"15:00-23:00"
+		},
+		{
+			"fisier":"purge.png",
+            "titlu": "Forever Purge",
+			"descriere":"Forever Purge",
+			"timp":"15:00-23:00"
+		},
+		{
+			"fisier":"black-widow.png",
+            "titlu": "Black Widow",
+			"descriere":"Black Widow",
+			"timp":"15:00-23:00"
+		}
+	]
+}

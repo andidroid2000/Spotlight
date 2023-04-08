@@ -1,0 +1,37 @@
+#golden_globes::cue {
+  background-color: transparent;
+  font-size: 1.8rem;
+  color:white;
+  text-shadow: 2px 2px black;
+}
+#cont_video{
+  display: flex;
+  justify-content: center;
+}
+#golden_globes{
+  padding: 1rem;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transition: all 0.2s linear;
+  width:100%;
+  border-radius: 40px;
+  width: 100%;
+  max-width: 1000px;
+  height:auto;
+}
+
+@media screen and (max-width:1000px){
+  #golden_globes::cue{
+  font-size: 1.5rem;
+  text-shadow: 1px 1px black;
+  }
+  #golden_globes{
+    max-width: 800px;
+  }
+}
+@media screen and (max-width:750px){
+  #golden_globes::cue{
+  font-size: 1.2rem;
+  text-shadow: none;
+  }
+}

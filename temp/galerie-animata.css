@@ -1,0 +1,149 @@
+#sectiune-galerie-animata {
+  padding-left: 40px;
+  /* variabila din css-ul general*/
+}
+
+.galerie-a {
+  margin: auto;
+  width: 420px;
+  height: 325px;
+  border: 10px solid;
+  border-image-source: url(https://cdn.pixabay.com/photo/2016/09/30/17/55/background-image-1705856_960_720.jpg);
+  border-image-slice: 25 25 25 25;
+  border-image-repeat: stretch;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.galerie-a figcaption {
+  position: absolute;
+  bottom: 0;
+  background: white;
+  width: 100%;
+  text-align: center;
+}
+
+.galerie-a figure {
+  width: 400px;
+  height: 320px;
+}
+
+#galerie-animata figure {
+  position: absolute;
+  top: -16px;
+  z-index: 0;
+  animation-name: galerie-animata;
+  animation-play-state: running;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-duration: 33s;
+  transform-origin: 0 center;
+}
+
+#galerie-animata:hover figure {
+  animation-play-state: paused;
+}
+
+#galerie-animata figure:nth-of-type(11) {
+  animation-delay: 0s;
+}
+
+#galerie-animata figure:nth-of-type(10) {
+  animation-delay: 3s;
+}
+
+#galerie-animata figure:nth-of-type(9) {
+  animation-delay: 6s;
+}
+
+#galerie-animata figure:nth-of-type(8) {
+  animation-delay: 9s;
+}
+
+#galerie-animata figure:nth-of-type(7) {
+  animation-delay: 12s;
+}
+
+#galerie-animata figure:nth-of-type(6) {
+  animation-delay: 15s;
+}
+
+#galerie-animata figure:nth-of-type(5) {
+  animation-delay: 18s;
+}
+
+#galerie-animata figure:nth-of-type(4) {
+  animation-delay: 21s;
+}
+
+#galerie-animata figure:nth-of-type(3) {
+  animation-delay: 24s;
+}
+
+#galerie-animata figure:nth-of-type(2) {
+  animation-delay: 27s;
+}
+
+#galerie-animata figure:nth-of-type(1) {
+  animation-delay: 30s;
+}
+
+/*cum calculam timpii:
+- avem 7 poze; vrem pentru fiecare un timp de afisare de 1.5 secunde si o trecere spre urmatoarea poza de 1.5 secunde
+- rezulta 3 secunde pentru fiecare imagine
+- 7imagini * 3secunde =21 secunde in total pentru animatie (animation-duration) si fiecare poza cu un delay = 3* numarul de ordine
+- momentul in care trebuie ascunsa poza si pusa in spatele celorlalte (ca sa isi astepte randul pentru noua animatie:
+il calculam cu formula  timp_afisare(normal+trecerea la urmatoarea poza)/timp_total*100 = 3/21*100 =  14.285714(aproximativ)
+100%..... 21s
+x%........3s
+
+- calculam 100-14.285714=85.714286 - la acest moment imaginea trebuie sa se vada in spatele imaginii care se afiseaza in mod curent (ca sa se vada si cat timp se realizeaza efectul de schimbare a imaginii
+
+!!!!!!!!!!!!!!!!!!!!!!!!CALCULE PT 12 IMAG
+3/36*100 = 8.33
+100 - 8.33 = 91.67
+*/
+@keyframes galerie-animata {
+  0% {
+    z-index: 10;
+    opacity: 1;
+  }
+  4.5454545455% {
+    transform: scaleY(0.5) rotateZ(0deg);
+  }
+  9.0909090909% {
+    z-index: 10;
+    opacity: 1;
+    transform: scaleY(0.5) rotateZ(180deg);
+  }
+  9.0909100909% {
+    z-index: -10;
+    transform: scaleY(1) rotateZ(0deg);
+  }
+  90.9090909091% {
+    z-index: -10;
+    opacity: 0;
+    transform: scaleY(1) rotateZ(0deg);
+  }
+  90.9090919091% {
+    z-index: 0;
+  }
+  100% {
+    z-index: 0;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #sectiune-galerie-animata {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  #sectiune-galerie-animata {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=galerie-animata.css.map */

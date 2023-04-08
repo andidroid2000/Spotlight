@@ -1,0 +1,129 @@
+#grid-cinema{
+    display: grid;
+    grid-template-columns: 1fr 0.25fr;
+    grid-template-areas:
+        "filme filtrele"
+}
+#produse{
+    grid-area: filme;
+    margin-right: 2.5rem;
+}
+#filtre{
+    grid-area: filtrele;
+}
+#content-filtre{
+    position: sticky;
+    top:4.5rem;
+    margin-right: -2.5rem;
+    padding: 1rem;
+    z-index: 10;
+    background-color: #c8d0d4;
+    border: 1rem solid;
+    border-image:url("../materiale_grafice/borderimg.png") 260 round;
+}
+#grid-filtre{
+    display: block;
+}
+#afis_fil{
+    display: none;
+}
+.produs{
+    margin-top: 2rem;
+}
+.titlu-art{
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    font-family: 'Merriweather', sans-serif;
+    text-align: center;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    background-color: #b8881c;
+    margin-bottom: 0.5rem;
+}
+.info-art{
+    display: grid;
+    /*grid-template-columns: "imagine text";*/
+    grid-template-columns: 0.3fr 0.7fr;
+}
+.imag-art{
+    background-color: #5ca2a2;
+    margin-right: 0.5rem;
+    display: felx;
+    flex-direction: column;
+    align-items: center;
+}
+.imag-art img{
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    min-width: 100px;
+    border-top: 1rem solid;
+    border-bottom: 1rem solid;
+    border-image:url("../materiale_grafice/borderimg.png") 260 round;
+}
+.detalii-art{
+    padding: 0.4rem;
+}
+.imag-art p{
+    text-align: center;
+}
+@media screen and (max-width:1200px){
+
+    #produse{
+        margin-right: 2rem;
+    }
+    #content-filtre{
+        margin-left: 0rem;
+    }
+    .produs{
+        margin-top: 1.5rem;
+    }
+}
+@media screen and (max-width:1090px){
+    #grid-cinema{
+        display: block;
+    }
+    #filtre{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    #content-filtre{
+        z-index: 0;
+        background-color: #eceae3;
+        border: none;
+        padding: 0rem;
+        margin: 0;
+    }
+    #afis_fil{
+        display: block;
+    }
+    #grid-filtre{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+        background-color: #c8d0d4;
+        padding: 1rem;
+        border: 1rem solid;
+        border-image:url("../materiale_grafice/borderimg.png") 260 round;
+    }
+    #produse{
+        margin-right: 0rem;
+    }
+    .titlu-art{
+        font-size: 1.25rem;}
+}
+@media screen and (max-width:540px){
+    .info-art{
+        display: block;
+    }
+    .imag-art{
+        margin-right: 0rem;
+        margin-bottom: 0.5rem;
+    }
+    .detalii-art{
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+        padding-bottom: 0.6rem;
+    }
+}

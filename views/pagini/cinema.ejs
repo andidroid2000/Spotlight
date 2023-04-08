@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta name="description" content="Site cu informații despre filme, actori, regizori și cu sistem de rating pentru producții.">
+        <meta name="keywords" content="Filme noi, actori, regizori, recenzii filme, seriale, documentare, animații, emisiuni tv">
+        <title>SPOTLIGHT - Cinema</title>
+        <%- include("../fragmente/head") %>
+        <link rel="stylesheet" href="/resurse/css/cinema.css" type="text/css">
+        <script type="text/javascript" src=/resurse/js/cinema.js></script>
+    </head>
+    <body>
+        <%- include("../fragmente/header") %>
+        <main>
+            <section id = "grid-cinema">
+            <section id = "filtre">
+                <section id = "content-filtre">
+                   <div><label style="font-size: 1.25rem; font-weight: bold; font-family: 'Merriweather', sans-serif;">Filtre: <button id = "afis_fil" style="margin-bottom: 1rem;">Ascunde filtre</button></label></div> 
+                <section id ="afis" style="display: block;">
+                    <section id ="grid-filtre">
+                <div><label><p>Nume:</p> <input id="titlu_prod" type="text" value=""></label></div>
+                <div><label><p>Nota minima:</p><input type="range" name="nota" id="id_nota" value="0" min="0"  max="10"></label></div>
+                <div>
+                    <label><p>Țara de productie:</p>
+                        <select id="tara" name="tara">
+                            <option value="toate" selected="selected">Toate</option>
+                            <% for( let tara of locals.tari) { %>
+                                <option value="<%- tara.tari %>"><%- tara.tari %></option>
+                            <% } %>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <p>Gen artistic:</p>
+                        <select id="i_sel_multiplu" multiple size="5">
+                            <option value="acțiune"> acțiune</option>
+                            <option value="aventură"> aventură</option>
+                            <option value="biografic"> biografic</option>
+                            <option value="comedie"> comedie</option>
+                            <option value="dramă"> dramă</option>
+                            <option value="familie"> familie</option>
+                            <option value="fantastic"> fantastic</option>
+                            <option value="istoric"> istoric</option>
+                            <option value="mister"> mister</option>
+                            <option value="musical"> musical</option>
+                            <option value="romance"> romance</option>
+                            <option value="thriller"> thriller</option>
+                        </select>
+                    </label><br>
+                </div>
+                <div><label>Apariție nouă: <input id="i_check1" class ="messageCheckbox" name="gr_chck" value="10" type="checkbox"/></label></div>
+                <div>
+                    <label><p>Continut pentru copii:</p>
+                        <label>Da
+                            <input id="i_rad1" name="gr_rad" value="true" type="radio"/>
+                        </label>
+                        <label>Nu
+                            <input id="i_rad2" name="gr_rad" value="false" type="radio"/>
+                        </label>
+                        <label>Toate
+                            <input id="i_rad3" name="gr_rad" value="toate" type="radio" checked/>
+                        </label>
+                    </label>
+                </div>
+                <div>
+                    <button id="filtrare">Filtrează</button>
+                    <button id="resetare">Resetează filtre</button>
+                </div>
+                <div>
+                    <p>Sortează după notă:</p>
+                    <button id="sortCrescNume">Crescător</button>
+                    <button id="sortDescrescNume">Descrescător</button>
+                </div>
+                <div id="medie">
+                    <p>Nota medie a producțiilor:</p>
+                    <button id="calculeaza">Calculează</button>
+                </div>
+            </section>
+                </section>
+            </section>
+            </section>
+            <section id = "produse">
+                <% for (let f of locals.filme) {%>
+                    <article id="<%-f.id_prod%>" class = "produs" style="display: block">
+                                <div id = "colturi" style="overflow-x:auto;">
+                                    <div class ="titlu-art">
+                                        <a href="/cinema/<%-f.id_prod%>" ><span class="val-nume"><%- f.nume %></span> (<%- f.data_lansare.getFullYear()%>)</a>
+                                    </div>
+                                    <div class ="info-art">
+                                        <div class = "imag-art">
+                                            <img src="/resurse/materiale_grafice/galerie/<%- f.cale_imagine %>"/>
+                                            <p><b>Tip: <span class="val-categorie"><%- f.categ_prod %></span></b></p>
+                                        </div>
+                                        <div class="detalii-art" style = "background-color: #aed3d8;">
+                                            <p><b>Rating:</b> <span class="val-nota"><%- f.nota %>/10</span> <meter min="0" max="10" value="<%- f.nota %>" low="5" optimum="10">8.9 din 10</meter></p>
+                                            <p><b>Țară producție:</b><span class = "val-tara"><%- f.tara_prod %></span></p>
+                                            <p><b>Gen:</b> <span class = "val-genuri"><%- f.gen_film %></span></p>
+                                            <p><b>Dată de lansare:</b> <span><%- f.data_lansare.getDate() %>-<%- locals.luni[f.data_lansare.getMonth()]%>-<span class = "an"><%- f.data_lansare.getFullYear()%></span> (<%- locals.zile[f.data_lansare.getDay()] %>)</span></p>
+                                            <p><b>Actori:</b> <span><%- f.actori %></span></p>
+                                            <p><b>Potrivit minorilor:</b> <span class = "val-copii"><%- f.pt_copii %></span></p>
+                                            <p><b>Descriere: </b><span><%- f.descriere %></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                    </article>      
+                <% } %>    
+            </section>
+        </section>
+        </main>
+        <%- include("../fragmente/footer") %> 
+        <div id="banner">Acesta este un proiect școlar!<i class="fas fa-user-graduate"></i></div>
+    </body>
+</html>
