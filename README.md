@@ -31,6 +31,7 @@ After installing the packages, just run the command `node .` in project terminal
 - Home page 
 
   Has a submenu for each section.
+  
   Contains: 
   - info about latest movies;
   - events;
