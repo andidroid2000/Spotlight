@@ -32,11 +32,33 @@ After installing the packages, just run the command `node .` in project terminal
 
   Has a submenu for each section.
   
+  <p align="center">
+  <img src="img/0.png">
+  </p>
+  
   Contains: 
   - info about latest movies;
   - events;
+  
+  <p align="center">
+  <img src="img/1.png">
+  </p>
+  
   - monthly movie top;
-  - gallery with upcoming cinema productions.
+  
+  <p align="center">
+  <img src="img/2.png">
+  </p>
+   <p align="center">
+  <img src="img/3.png">
+  </p>
+  
+  - dynamic gallery with upcoming cinema productions.
+  
+   <p align="center">
+  <img src="img/4.gif">
+  </p>
+  
   
 - About page
 
@@ -46,7 +68,15 @@ After installing the packages, just run the command `node .` in project terminal
 
   Has a submenu for each type of cinema productions - it works as a filter (all types, animations, movies, documentaries, short films and soap operas)
   
+  <p align="center">
+  <img src="img/5.png">
+  </p>
+  
   Data is shown as a list of cards with main info about movies.
+  
+  <p align="center">
+  <img src="img/6.png">
+  </p>
   
   This page contains a filter section with the following options:
   - name;
